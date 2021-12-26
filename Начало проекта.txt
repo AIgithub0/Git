@@ -10,8 +10,6 @@ from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QInputDialog, QL
 class Example(QWidget):
     def __init__(self):
         super().__init__()
-        self.old_img = 'kotik.jpg'
-        self.new_img = 'new.jpg'
         self.initUI()
 
     def initUI(self):
