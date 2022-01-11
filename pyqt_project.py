@@ -22,7 +22,7 @@ class Window1(QtWidgets.QWidget):
         self.editor = QTextEdit(self)
         self.editor.resize(800, 500)
         self.editor.move(0, 0)
-        self.editor.setStyleSheet('QTextEdit{background-image:url("fon_img.jpg");}')  # установка фона
+        self.editor.setStyleSheet('QTextEdit{background-image:url("data\\fon_img.jpg");}')  # установка фона
         self.label1 = QLabel(self)
         self.label1.setText("Сурдопереводчик")
         self.label1.resize(700, 100)
@@ -68,7 +68,7 @@ class Window2(QtWidgets.QWidget):  # второе окно для руско-я�
         self.setWindowTitle('Русский язык')
         self.setGeometry(300, 300, 800, 500)
         self.background = QLabel(self)
-        self.background.setPixmap(QPixmap("fon_w2.jpg"))
+        self.background.setPixmap(QPixmap("data\\fon_w2.jpg"))
         self.background.show()
         self.exp_lbl = QLabel(self)
         self.exp_lbl.setText("Поставьте английскую раскладку")
@@ -357,7 +357,7 @@ class Window3(QtWidgets.QWidget):  # окно для англо-язычных
         self.setWindowTitle('English language')
         self.setGeometry(300, 300, 800, 500)
         self.background = QLabel(self)
-        self.background.setPixmap(QPixmap("fon_w2.jpg"))
+        self.background.setPixmap(QPixmap("data\\fon_w2.jpg"))
         self.background.show()
         self.test_btn = QPushButton(self)
         self.test_btn.setText("Go to test")
@@ -605,7 +605,7 @@ class Window4(QtWidgets.QWidget):
         self.setWindowTitle('Руководство/Management')
         self.setGeometry(300, 300, 800, 500)
         self.background = QLabel(self)
-        self.background.setPixmap(QPixmap("fon_w2.jpg"))
+        self.background.setPixmap(QPixmap("data\\fon_w2.jpg"))
         self.background.show()
 
         self.label_rus_rules1 = QLabel(self)
